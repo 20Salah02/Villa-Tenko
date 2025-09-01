@@ -1,0 +1,210 @@
+* {
+	box-sizing: border-box;
+}
+#omnih-booking .part {
+	position: relative;
+	height: 100vh;
+}
+
+#omnih-booking .part .part-center {
+	position: relative;
+}
+
+#omnih-booking{
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
+	background-position: center;
+}
+
+#omnih-booking .form-booking {
+	background: #fff;
+	border-radius: 2px;
+	width: 100%;
+}
+
+#omnih-booking .form-booking>form .row.no-margin {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#omnih-booking .form-booking>form .row.no-margin>[class*="col-"] {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#omnih-booking .form-booking .form-group {
+	position: relative;
+	padding: 25px;
+	margin-bottom: 0px;
+}
+
+#omnih-booking .form-booking .form-group:after {
+	content: '';
+	background: rgba(129, 131, 144, 0.15);
+	position: absolute;
+	top: 25px;
+	bottom: 0;
+	right: 0px;
+	width: 2px;
+	height: 75px;
+}
+
+#omnih-booking .form-booking .form-control {
+	background-color: transparent;
+	border-radius: 0px;
+	border: none;
+	height: 50px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-size: 17px;
+	color: #222;
+	font-weight: 400;
+	padding: 0;
+}
+
+#omnih-booking .form-booking .form-control::-webkit-input-placeholder {
+	color: #818390;
+}
+
+#omnih-booking .form-booking .form-control:-ms-input-placeholder {
+	color: #818390;
+}
+
+#omnih-booking .form-booking .form-control::placeholder {
+	color: #818390;
+}
+
+#omnih-booking .form-booking input[type="date"].form-control:invalid {
+	color: #818390;
+}
+
+#omnih-booking .form-booking select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#omnih-booking .form-booking select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #818390;
+	font-size: 14px;
+}
+
+#omnih-booking .form-booking select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#omnih-booking .form-booking .form-label {
+	color: #666;
+	display: block;
+	font-weight: 400;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+#omnih-booking .form-booking .btn-form {
+	padding: 25px;
+}
+
+#omnih-booking .best{
+	font-size: 25px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+
+#omnih-booking .booking-form select.form-control+.arrow-down {
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #818390;
+	font-size: 14px;
+}
+
+#omnih-booking .booking-form select.form-control+.arrow-down:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#omnih-booking .select-custom{
+	background-image: url('../omnih/chevron.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: 15px 15px;
+	background-position: right;
+}
+#omnih-booking .select-custom:focus{
+	background-image: url('../omnih/chevron-up.png');
+}
+
+@media only screen and (max-width:960px) {
+	#omnih-booking .form-booking .form-group{
+		padding: 0 25px;
+		margin-bottom: 5px;
+	}
+	#omnih-booking .occupants{
+		padding: 0 10px;
+	}
+	#omnih-booking .occupants .form-group{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	#omnih-booking .form-booking .form-group:after {
+		display: none;
+	}
+	#omnih-booking .form-booking .btn-form{
+		padding-top: 0;
+		margin-top: 10px;
+	}
+	#omnih-booking .form-booking .btn-submit{
+		height: 48px !important;
+	} 
+	#omnih-booking .form-booking .form-control{
+		font-size: 14px;
+		background-color: #fff;
+		padding: 0 15px;
+		border-radius: 2px;
+	}
+	#omnih-booking form{
+		background-color: #e6e6e6;
+	}
+	#omnih-booking .content-form{
+		padding: 10px 0;
+	}
+	#omnih-booking .chevron{
+		height: 15px;
+		width: 15px;
+	}
+	
+	#omnih-booking .chevron-up{
+		display: none;
+	}
+	
+	#omnih-booking .chevron-down{
+		display: none;
+	}
+	#omnih-booking .select-custom{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-size: 15px 15px;
+		background-position: right;
+	}
+}
